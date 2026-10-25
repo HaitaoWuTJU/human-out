@@ -1,5 +1,7 @@
 # Human Out
 
+[🌐 浏览交互式网站](https://HaitaoWuTJU.github.io/human-out/)
+
 **那些人类曾经领先，后来被机器追上或超越的任务。**
 
 [English](README.en.md) · [结构化数据](data/tasks.json) · [CSV](data/tasks.csv) · [如何贡献](CONTRIBUTING.md)

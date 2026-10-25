@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f1e9">
+<title>Human Out — 人类与机器的能力边界</title>
+<meta name="description" content="一份有来源的 AI 超越人类任务档案。从围棋、扑克到现实无人机竞速，追踪结果与边界。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#catalog">跳至档案 / Skip to archive</a>
+<header class="header"><a class="wordmark" href="./" aria-label="Human Out 首页">H<span class="mark">↗</span> <span>HUMAN OUT<span class="wordmark-sub">THE CAPABILITY ARCHIVE</span></span></a><nav aria-label="主导航"><a href="#catalog" data-i18n="archive">探索档案</a><a href="https://github.com/HaitaoWuTJU/human-out" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button id="language" aria-label="Switch to English">EN</button></nav></header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> AN OPEN RECORD OF MACHINE INTELLIGENCE</p><h1 id="hero-title">HUMAN<br><span class="outline">OUT<span class="period">.</span></span></h1><p class="hero-description" data-i18n="intro">那些人类曾经领先，<br>后来被机器追上或超越的任务。</p><div class="hero-bottom"><a class="primary-link" href="#catalog"><span data-i18n="explore">探索能力边界</span> <span>↓</span></a><span class="edition">VOL. 01 / <span id="edition-date">2026.10</span></span></div></div>
+<div class="hero-art" aria-hidden="true"><div class="art-label">EXHIBIT 001 <span>THE TURNING POINT</span></div><svg class="go-board" viewBox="0 0 480 480"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width=".8"/></pattern><radialGradient id="stone"><stop offset="0" stop-color="#45453e"/><stop offset="1" stop-color="#191b17"/></radialGradient><filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-opacity=".16"/></filter></defs><rect x="40" y="40" width="400" height="400" fill="url(#grid)"/><path d="M40 40H440V440H40Z" fill="none" stroke="currentColor" stroke-width=".8"/><g fill="currentColor"><circle cx="120" cy="120" r="3"/><circle cx="360" cy="120" r="3"/><circle cx="240" cy="240" r="3"/><circle cx="120" cy="360" r="3"/><circle cx="360" cy="360" r="3"/></g><g filter="url(#shadow)"><g fill="url(#stone)"><circle cx="160" cy="240" r="17"/><circle cx="200" cy="200" r="17"/><circle cx="240" cy="160" r="17"/><circle cx="280" cy="200" r="17"/><circle cx="320" cy="240" r="17"/><circle cx="240" cy="280" r="17"/></g><g fill="#fffdf5" stroke="#d2d0c6"><circle cx="160" cy="200" r="17"/><circle cx="200" cy="240" r="17"/><circle cx="240" cy="200" r="17"/><circle cx="280" cy="240" r="17"/><circle cx="280" cy="280" r="17"/></g><circle cx="320" cy="160" r="17" fill="#db462c"/></g><path d="M320 130V78H405" stroke="#db462c" fill="none"/><text x="332" y="69" fill="#db462c" font-size="11" font-family="monospace">A NEW MOVE</text></svg><div class="art-caption"><span>HUMAN × MACHINE</span><span data-i18n="illustration">围棋示意 · 非真实棋谱</span></div></div>
+</section>
+<section class="stats" aria-label="档案统计"><div><strong id="total-count">23</strong><span data-i18n="milestones">条有据可查的里程碑</span></div><div><strong>06</strong><span data-i18n="domains">个探索类别</span></div><div><strong id="year-span">1997—2026</strong><span data-i18n="years">档案时间跨度</span></div><p data-i18n="statsNote">一次胜利，是一个坐标。<br>一项任务的边界，需要条件来定义。</p></section>
+<section id="catalog" class="catalog" aria-labelledby="catalog-title"><div class="section-heading"><div><p class="eyebrow">THE ARCHIVE / 01</p><h2 id="catalog-title" data-i18n="catalogTitle">能力边界档案</h2></div><p data-i18n="catalogIntro">每一项突破，都有它的具体语境。<br>从结果出发，沿着证据深入。</p></div>
+<div class="filters"><div class="search-wrap"><label class="search-icon" for="search">⌕</label><input id="search" type="search" placeholder="搜索任务、系统、年份…" aria-label="搜索任务、系统、年份"><span class="search-hint">/</span></div><div class="filter-selects"><label><span class="sr-only" data-i18n="evidenceLabel">证据类型</span><select id="evidence"></select></label><label><span class="sr-only" data-i18n="sortLabel">排序</span><select id="sort"><option value="asc">时间：从早到晚</option><option value="desc">时间：从晚到早</option></select></label></div></div>
+<div id="categories" class="categories" role="group" aria-label="任务类别"></div>
+<div class="results-bar"><span id="result-count" role="status" aria-live="polite"></span><button id="reset" data-i18n="reset">重置筛选 ↺</button></div>
+<div id="records" class="records"><p class="loading" data-i18n="loading">正在载入档案…</p></div>
+<noscript><p>此档案的搜索需要 JavaScript。你也可以阅读 <a href="https://github.com/HaitaoWuTJU/human-out#readme">完整 README</a> 或下载 <a href="data/tasks.csv">CSV 数据</a>。</p></noscript>
+</section>
+<section class="method" aria-labelledby="method-title"><div><p class="eyebrow">READ THE FINE PRINT / 02</p><h2 id="method-title" data-i18n="methodTitle">“击败人类”，<br>究竟意味着什么？</h2><p data-i18n="methodIntro">结果值得记录，条件同样值得。<br>我们用不同标签，描述不同程度的突破。</p><a href="https://github.com/HaitaoWuTJU/human-out/blob/main/CONTRIBUTING.md" class="text-link"><span data-i18n="criteria">查看收录原则</span> ↗</a></div><div id="legend" class="legend"></div></section>
+<section class="contribute"><p class="eyebrow">THE RECORD IS STILL OPEN</p><h2 data-i18n="contributeTitle">下一个里程碑，<br>由你补上。</h2><p data-i18n="contributeText">这份档案持续生长。欢迎带着原始证据，<br>补充新任务、纠正旧结论，或提供更强的人类基线。</p><a class="primary-link" href="https://github.com/HaitaoWuTJU/human-out/issues/new/choose"><span data-i18n="contribute">贡献一条记录</span> ↗</a></section>
+</main>
+<footer><a class="footer-brand" href="./">HUMAN OUT<span class="period">.</span></a><p>Human out of the leaderboard.<br>Human still in the loop.</p><div><a href="data/tasks.json">JSON ↗</a><a href="data/tasks.csv">CSV ↗</a><a href="https://github.com/HaitaoWuTJU/human-out">SOURCE ↗</a><span>CC0 1.0 · <span data-i18n="updated">资料核验</span> <span id="checked-date">2026-10-25</span></span></div></footer>
+</body></html>

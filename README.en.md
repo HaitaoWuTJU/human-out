@@ -1,5 +1,7 @@
 # Human Out
 
+[🌐 Explore the interactive website](https://HaitaoWuTJU.github.io/human-out/)
+
 **Tasks where machines have caught up with—or surpassed—human performance.**
 
 [中文](README.md) · [JSON](data/tasks.json) · [CSV](data/tasks.csv) · [Contribute](CONTRIBUTING.md)
