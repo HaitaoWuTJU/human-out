@@ -18,7 +18,7 @@ const strings = {
 };
 const $ = selector => document.querySelector(selector);
 const params = new URLSearchParams(location.search);
-let language = params.get('lang') === 'en' ? 'en' : 'zh';
+let language = params.get('lang') === 'zh' ? 'zh' : 'en';
 let category = Object.hasOwn(categories, params.get('category')) ? params.get('category') : 'all';
 let tasks = [], loadFailed = false, optionsInitialized = false;
 const initialEvidence = Object.hasOwn(evidence, params.get('evidence')) ? params.get('evidence') : '';
@@ -41,7 +41,7 @@ function setOptions() {
 }
 function syncURL() {
  const p = new URLSearchParams();
- if(language === 'en') p.set('lang','en'); if(category !== 'all') p.set('category',category);
+ if(language === 'zh') p.set('lang','zh'); if(category !== 'all') p.set('category',category);
  if($('#search').value.trim()) p.set('q',$('#search').value.trim());
  if($('#evidence').value) p.set('evidence',$('#evidence').value);
  if($('#sort').value === 'desc') p.set('sort','desc');
